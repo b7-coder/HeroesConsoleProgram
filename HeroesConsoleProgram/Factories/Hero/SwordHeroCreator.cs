@@ -11,6 +11,7 @@ namespace HeroesConsoleProgram.Factories.Hero
         {
             var skills = new List<IBaseSkill>();
             skills.Add(new Sword());
+
             return new Hero() 
             {
                 Name = "SwordsHero",

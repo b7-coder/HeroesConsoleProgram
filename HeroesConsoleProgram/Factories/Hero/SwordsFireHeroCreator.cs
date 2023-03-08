@@ -16,10 +16,10 @@ namespace HeroesConsoleProgram.Factories.Hero
         {
             var logger = new ConsoleLogger() { color= ConsoleColor.Red };
 
-
             var skills = new List<IBaseSkill>();
             skills.Add(new Sword() { DamageMultiplier=3, logger= logger });
             skills.Add(new Fire() { logger= logger });
+
             return new Hero()
             {
                 Name = "SwordsFireHero",

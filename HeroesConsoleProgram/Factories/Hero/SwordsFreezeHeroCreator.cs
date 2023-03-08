@@ -19,6 +19,7 @@ namespace HeroesConsoleProgram.Factories.Hero
             var skills = new List<IBaseSkill>();
             skills.Add(new Sword() { DamageMultiplier=4, logger = logger });
             skills.Add(new Freeze() { logger= logger });
+
             return new Hero()
             {
                 Name = "SwordsFreezeHero",
